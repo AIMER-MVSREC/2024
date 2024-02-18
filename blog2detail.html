@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMERS-MVSR</title>
+    <link rel="favicon" href="assets/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen"> 
+	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel='stylesheet' id='camera-css'  href='assets/css/camera.css' type='text/css' media='all'> 
+</head>
+<style>
+   
+    .img {
+        height: 60vh;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container1 {
+        margin-top: 30px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .card-img-top {
+        height: 250px;
+        object-fit: cover;
+    }
+    .scrollspy-example-2 {
+    max-height: 300px; /* Set a maximum height for the comment section */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+    .container {
+      justify-content: center;
+    }
+    .comment-section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .comment-section .comments {
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .comment-section .input-group {
+        position: sticky;
+        bottom: 0;
+        background-color: #fff; /* Set a background color to ensure visibility */
+        z-index: 1000; /* Ensure the input group stays on top of other elements */
+    }
+    h1{
+        font-family: "Bree-Serif";
+    }
+    span {
+      font-size: 10px;
+    }
+    
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #030e3c;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Bootstrap" width="30" height="24" class="logo"><span style="color: #fff;font-size: 30px;margin:15px;"> AIMER - MVSREC</span>
+            </a>
+            <button  style="background-color: #fff;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color: #fff;">Home</a>
+                    <a class="nav-link" href="about.html" style="color: #fff;">About</a>
+                    <a class="nav-link" href="blogs.html" style="color: #fff;">Blog</a>
+                    <a class="nav-link" href="gallery.html" style="color: #fff;">Gallery</a>
+                </div>
+            </div>
+        </div>
+      </nav>
+    <div class="container d-block d-lg-none">
+        <button class="btn m-2" style="background-color: #030e3c;color:#fff;">AI</button>
+        <button class="btn m-2" style="background-color: #030e3c;color:#fff;">EDUCATION</button>
+        <button class="btn m-2" style="background-color: #030e3c;color:#fff;">MACHINE LEARNING</button>
+        <button class="btn m-2" style="background-color: #030e3c;color:#fff;">Research</button>
+    <h1>The Present and Future of AI in Healthcare</h1>
+      <div>
+          <img src=""/>
+          <p>Admin</p>
+          
+      </div>
+      <hr>
+      <!--icons-->
+      <hr>
+      <div>
+        <img src="assets/images/ai-healthcare.jpg" class="img"/>
+                
+        <p>We have a tendency of overestimating the effects, both harmful and positive, of new technologies on our ability to do everything from conduct business to mediate climate change to build skyscrapers. To really understand what new tech can do, however, requires we understand what it has done.&nbsp;</p>
+                
+                
+                
+        <p>When we think about AI as a possible tool for our health, we cannot just derive its importance solely from our thoughts. We have to look at the numbers.</p>
+        
+        
+        
+        <ul style="list-style-type: disc;">
+        <li><p>Over 500 healthcare AI algorithms have been approved by the U.S. FDA, according to <a href="https://healthexec.com/topics/artificial-intelligence/fda-has-now-cleared-more-500-healthcare-ai-algorithms" target="_blank" rel="noreferrer noopener nofollow">HealthExec</a>.</p></li>
+        
+        
+        
+        <li>AI-enabled U.S. digital health startups received more than $3 billion in the first half of 2022 and nearly $10 billion in 2021, according to a Rock Health investment analysis commissioned by <a href="https://www.politico.com/news/2022/08/15/artificial-intelligence-health-care-00051828" target="_blank" rel="noreferrer noopener nofollow">POLITICO</a>.</li>
+        
+        
+        
+        <li>The projected global market size of AI-based healthcare solutions will exceed $208 billion by 2030, according to <a href="https://www.biospace.com/article/artificial-intelligence-in-healthcare-market-size-to-surpass-usd-208-5-bn-by-2030/" target="_blank" rel="noreferrer noopener nofollow">Biospace</a>.</li>
+        
+        
+        
+        <li>The number of U.S. hospitals that have implemented AI has tripled since 2020, says <a href="https://executive-ed.xpro.mit.edu/artificial-intelligence-in-healthcare?utm_source=Google&amp;utm_network=g&amp;utm_medium=c&amp;utm_term=uses%20of%20ai%20in%20healthcare&amp;utm_location=9031952&amp;utm_campaign_id=19511236276&amp;utm_adset_id=148018065994&amp;utm_ad_id=644092295976&amp;gclid=Cj0KCQiA2-2eBhClARIsAGLQ2Rkd8ZsT4kNldqw30L03W_SO-19G08EarF9O1JdX3Ip5k36cUZtCN7caAvDXEALw_wcB" target="_blank" rel="noreferrer noopener nofollow">MIT xPRO</a>.</li>
+        </ul>
+        
+        
+        
+        <h4 class="wp-block-heading"><strong>AI’s foothold in healthcare</strong></h4>
+        
+        
+        
+        <p>The reason for these numbers is that healthcare can benefit from what AI actually does on a day-to-day basis.&nbsp;</p>
+        
+        
+        
+        <p>“The promise of AI in healthcare is very high,” according to <a href="https://www.adamyala.org/" target="_blank" rel="noreferrer noopener nofollow">Adam Yala</a>, Associate Professor of <a href="https://computationalhealth.berkeley.edu/" target="_blank" rel="noreferrer noopener nofollow">Computational Precision Health</a> and <a href="https://eecs.berkeley.edu/" target="_blank" rel="noreferrer noopener nofollow">EECS</a> at the University of California, Berkeley, and University of California, San Francisco. But the practical, full-scale implementation is going to take a lot of work to achieve a demonstrable clinical use.&nbsp;</p>
+        
+        
+        
+        <p>“From screening to survivorship, AI is providing us with exciting possibilities,” said Yala. “To design better screening guidelines, sharpen those algorithms, make them better and more effective. AI is the best tool we have to do that.”</p>
+        
+        
+        
+        <p>Among the legitimate promises of AI is the ability to catch cancer earlier, optimize staffing to reduce attrition and burnout, improve the quality of life of those fighting the disease, and increase the survival rate.</p>
+        
+        
+        
+        <p>Yala gave breast cancer as an example of how many data points you need to understand to trace the likelihood of getting the disease. These include family history, density of breast tissue, results of mammograms, and flags on other types of imaging. To create patterns that indicate a higher risk of breast cancer, you need to incorporate hundreds of thousands of mammograms consisting of tens of millions of pixels, and high-risk MRI and CT scan indicators.</p>
+        
+        
+        
+        <p>Once a diagnostic team comes up with AI treatment structures, they face the same problems as with any new treatment, including drugs. They need clinical trials and FDA approval (which the number of approved algorithms we referenced above indicates is not an insurmountable challenge).&nbsp;&nbsp;</p>
+        
+        
+        
+        <p>“We’ve proven it works, but there is still a long time between research proof and clinical use,” said Yala. “We have to get insurers on board and hospitals signing off and more. Changing standard of care is a (challenging) task.”</p>
+        
+        
+        
+        <p>Yala shared a sentiment that was echoed by everyone we spoke with on this topic: AI, like everything else, is always and only a tool—a great tool but only a tool, not a replacement human brain. It must always be mediated by a clinical mind.&nbsp;</p>
+        
+        
+        
+        <p>“(Human minds) can catch finer-grained things,” said Yala. AI will give us more time to spend on care and reduce the time we waste putting the puzzle pieces together.&nbsp;</p>
+        
+        
+        
+        <h4 class="wp-block-heading"><strong>Current medical uses of AI</strong></h4>
+        
+        
+        
+        <p><em>Screening</em></p>
+        
+        
+        
+        <p>As Yala mentioned above, AI is being employed to design more exact screening tests for complex illnesses, including cancer.</p>
+        
+        
+        
+        <p><em>Intervention</em>&nbsp;</p>
+        
+        
+        
+        <p>“One of the approaches in current use is in monitoring patients for immediate decline,” said Saurabh Gombar, CEO of Atropos Health and resident physician at Stanford University Hospital. “We have criteria that physicians are trained on. If a patient is meeting those criteria, intervention may make sense. There’s a lot of difficulty in immediately monitoring patients if it’s done by a human, but a computer system can do it well.”</p>
+        
+        
+        
+        <p>So a number of institutions have an AI model for sepsis detection, which are active and in use in care in institutions across the United States. A study by <a href="https://hub.jhu.edu/magazine/2022/winter/ai-technology-to-detect-sepsis/#:~:text=A%20new%20artificial%20intelligence%20system,risk%20of%20life%2Dthreatening%20complications." target="_blank" rel="noreferrer noopener nofollow">Johns Hopkins University</a> of five such hospitals has found it to be effective.&nbsp;</p>
+        
+        
+        
+        <p><em>Early warning</em></p>
+        
+        
+        
+        <p>AI and embedded technologies are being used more and more to provide patient safety. “You’re starting to see more <a href="https://engineering.stanford.edu/magazine/article/ai-controlled-sensors-could-save-lives-smart-hospitals-and-homes" target="_blank" rel="noreferrer noopener nofollow">smart sensors</a> around the care space to make sure patients don’t fall, to detect things a little bit earlier, and get help to patients earlier,” said Gombar.&nbsp;&nbsp;</p>
+        
+        
+        
+        <p>The <a href="https://healthitanalytics.com/news/use-of-ai-enabled-screening-tool-led-to-more-diagnoses-of-heart-condition" target="_blank" rel="noreferrer noopener nofollow">Mayo Clinic</a> has found AI screening improved the ability to anticipate cardiac events. <a href="https://provectus.com/case-studies/ml-powered-disease-screening-platform/" target="_blank" rel="noreferrer noopener nofollow">Pr3vent</a> has identified childhood eye diseases early with the help of a machine learning solution. A study by the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7892287/" target="_blank" rel="noreferrer noopener nofollow">National Institutes of Health</a> has found AI-powered early warning systems enable quicker identification of health problems.&nbsp;</p>
+        
+        
+        
+        <p><em>Resource delivery</em></p>
+        
+        
+        
+        <p>AI is also used to <a href="https://www.nuance.com/healthcare.html" target="_blank" rel="noreferrer noopener nofollow">optimize resource delivery </a>to patients for drugs and equipment that are in short supply as well as to optimize hospital bed allocation.&nbsp;</p>
+        
+        
+        
+        <p>In addition, “AI is well suited to help with processes adjacent to care decisions,” said Gombar. “Clinicians do well making the correct decision for patients, but there are processes that make getting the care delivered difficult or costly, like making sure the chart has the adequate level of coding for billing.”</p>
+        
+        
+        
+        <h4 class="wp-block-heading"><strong>The future of AI in healthcare</strong></h4>
+        
+        
+        
+        <p><em>Medical assistants</em></p>
+        
+        
+        
+        <p>“These are going through trials at a number of medical facilities,” said <a href="https://www.cerebras.net/author/nataliacerebras-net/" target="_blank" rel="noreferrer noopener nofollow">Natalia Vassilieva</a>, Director of Product at the AI company <a href="https://www.cerebras.net/" target="_blank" rel="noreferrer noopener nofollow">Cerebras</a>. “These assistants will help produce the most effective doctors’ schedules and help [ensure] relevant patient information when they move from patient to patient.”</p>
+        
+        
+        
+        <p><em>Organization-wide workflows</em></p>
+        
+        
+        
+        <p><a href="https://www.healthcaredive.com/news/top-healthcare-trends-2023/642270/?utm_source=Sailthru&amp;utm_medium=email&amp;utm_campaign=Issue:%202023-02-09%20Healthcare%20Dive%20%5Bissue:47950%5D&amp;utm_term=Healthcare%20Dive" target="_blank" rel="noreferrer noopener nofollow">Healthcare Dive</a>’s assessment of this year’s top healthcare trends lays out a more integrated approach: “Providers will also start to weave artificial intelligence into their workflows, including in areas like clinical decision support, patient engagement, and revenue cycle management,” said journalist <a href="https://www.healthcaredive.com/editors/HMensik/" target="_blank" rel="noreferrer noopener nofollow">Hailey Mensik</a>, who specializes in interviewing healthcare leaders.&nbsp;</p>
+        
+        
+        
+        <p><em>Learning, training, and privacy</em></p>
+        
+        
+        
+        <p>There is always some worry, especially when it comes to healthcare, that AI will crash into our privacy and wind up sharing things we don’t want out in the open. Gombar does not believe this should inspire any panic, because data can be shared between healthcare AI models without exposing personally identifiable information (PII) data.&nbsp;</p>
+        
+        
+        
+        <p>“When you create an AI model, you take that model out and share it with the other hospitals to run that model on top of their data,” said Murali Gandhirajan, Snowflake’s Healthcare Field CTO. “The data is not getting shifted—the algorithm is getting shifted.”&nbsp;</p>
+        
+        
+        
+        <p>And, model sharing allows a radical communication of knowledge without risking a privacy breach. Hopefully, this process will gain more and more ground.&nbsp;</p>
+        
+        
+        
+        <p>There is a risk in using only public medical data; for example, data from the Centers of Disease Control and Prevention.&nbsp;</p>
+        
+        
+        
+        <p>“Projects that are trained on publicly available medical data, because there’s so few data sets available to them, tend to over-index on very few clinical scenarios,” said Gombar. “The result, for example, is that a disease could have too much prominence in a given analysis.”</p>
+        
+        
+        
+        <p>“AI learns from a data set that’s been provided to it,” Gombar said. “If there’s a demographic difference between where the training data set came from and the production data set, where it’s going to be utilized—then it’s going to localize that data. So even if a model has been developed somewhere else, actually calibrating it to your local environment is something that is important to do. Healthcare institutions that have pretty robust plans around the deployment of AI always have this local calibration step in place, but this is a new tool, so it’s not that every hospital in the country is equally aware of how to do this well.”</p>
+        
+        
+        
+        <h4 class="wp-block-heading"><strong>AI will always be a tool, not a replacement</strong></h4>
+        
+        
+        
+        <p>There will likely never be a wholly autonomous, AI-driven robot doctor. Short of the <a href="https://www.britannica.com/technology/singularity-technology" target="_blank" rel="noreferrer noopener nofollow">singularity</a>, AI is and will always be a tool.</p>
+        
+        
+        
+        <p>“But the sophistication of the tool will grow,” said Cerebras’ Vassilieva. “In some cases, where it’s trivial to recognize, the AI may be able to diagnose on its own. But when there are any doubts, when the picture is not crystal clear, it’ll highlight it to the doctor. I see it always used like that. I don’t think you’ll ever experience a completely automated loop of taking images, going into surgery, and a robotic doctor doing your procedure.”&nbsp;</p>
+        
+        
+        
+        <p>AI is a part of our medical experience and will likely become more so as it, and we, evolve together.<br>Join our <a href="https://www.snowflake.com/webinar/customer-webinars/accelerate-complex-workflows-with-snowpark-2023-07-27/" target="_blank" rel="noreferrer noopener">upcoming webinar on July 27</a> to learn how Sanofi, a multinational pharmaceutical and healthcare company, found success by leveraging Snowflake’s AI/ML capabilities with Snowpark.</p>
+                          
+    
+        
+    </div>
+      
+  </div>
+    <div class="container1 d-none d-lg-block">
+        <div class="d-flex flex-row">
+            <button class="btn m-2" style="background-color: #030e3c;color:#fff;">AI</button>
+            <button class="btn m-2" style="background-color: #030e3c;color:#fff;">EDUCATION</button>
+            <button class="btn m-2" style="background-color: #030e3c;color:#fff;">MACHINE LEARNING</button>
+            <button class="btn m-2" style="background-color: #030e3c;color:#fff;">Research</button>
+            </div>
+        <h1>The Present and Future of AI in Healthcare</h1>
+        <div>
+            <img src=""/>
+            <p>Admin</p>
+            
+        </div>
+        <hr>
+        <!--icons-->
+        <hr>
+        <div>
+            <img src="assets/images/ai-healthcare.jpg" class="img"/>
+           
+                        
+                <p>We have a tendency of overestimating the effects, both harmful and positive, of new technologies on our ability to do everything from conduct business to mediate climate change to build skyscrapers. To really understand what new tech can do, however, requires we understand what it has done.&nbsp;</p>
+                
+                
+                
+                <p>When we think about AI as a possible tool for our health, we cannot just derive its importance solely from our thoughts. We have to look at the numbers.</p>
+                
+                
+                
+                <ul type="disc">
+                <li>Over 500 healthcare AI algorithms have been approved by the U.S. FDA, according to <a href="https://healthexec.com/topics/artificial-intelligence/fda-has-now-cleared-more-500-healthcare-ai-algorithms" target="_blank" rel="noreferrer noopener nofollow">HealthExec</a>.</li>
+                
+                
+                
+                <li>AI-enabled U.S. digital health startups received more than $3 billion in the first half of 2022 and nearly $10 billion in 2021, according to a Rock Health investment analysis commissioned by <a href="https://www.politico.com/news/2022/08/15/artificial-intelligence-health-care-00051828" target="_blank" rel="noreferrer noopener nofollow">POLITICO</a>.</li>
+                
+                
+                
+                <li>The projected global market size of AI-based healthcare solutions will exceed $208 billion by 2030, according to <a href="https://www.biospace.com/article/artificial-intelligence-in-healthcare-market-size-to-surpass-usd-208-5-bn-by-2030/" target="_blank" rel="noreferrer noopener nofollow">Biospace</a>.</li>
+                
+                
+                
+                <li>The number of U.S. hospitals that have implemented AI has tripled since 2020, says <a href="https://executive-ed.xpro.mit.edu/artificial-intelligence-in-healthcare?utm_source=Google&amp;utm_network=g&amp;utm_medium=c&amp;utm_term=uses%20of%20ai%20in%20healthcare&amp;utm_location=9031952&amp;utm_campaign_id=19511236276&amp;utm_adset_id=148018065994&amp;utm_ad_id=644092295976&amp;gclid=Cj0KCQiA2-2eBhClARIsAGLQ2Rkd8ZsT4kNldqw30L03W_SO-19G08EarF9O1JdX3Ip5k36cUZtCN7caAvDXEALw_wcB" target="_blank" rel="noreferrer noopener nofollow">MIT xPRO</a>.</li>
+                </ul>
+                
+                
+                
+                <h4 class="wp-block-heading"><strong>AI’s foothold in healthcare</strong></h4>
+                
+                
+                
+                <p>The reason for these numbers is that healthcare can benefit from what AI actually does on a day-to-day basis.&nbsp;</p>
+                
+                
+                
+                <p>“The promise of AI in healthcare is very high,” according to <a href="https://www.adamyala.org/" target="_blank" rel="noreferrer noopener nofollow">Adam Yala</a>, Associate Professor of <a href="https://computationalhealth.berkeley.edu/" target="_blank" rel="noreferrer noopener nofollow">Computational Precision Health</a> and <a href="https://eecs.berkeley.edu/" target="_blank" rel="noreferrer noopener nofollow">EECS</a> at the University of California, Berkeley, and University of California, San Francisco. But the practical, full-scale implementation is going to take a lot of work to achieve a demonstrable clinical use.&nbsp;</p>
+                
+                
+                
+                <p>“From screening to survivorship, AI is providing us with exciting possibilities,” said Yala. “To design better screening guidelines, sharpen those algorithms, make them better and more effective. AI is the best tool we have to do that.”</p>
+                
+                
+                
+                <p>Among the legitimate promises of AI is the ability to catch cancer earlier, optimize staffing to reduce attrition and burnout, improve the quality of life of those fighting the disease, and increase the survival rate.</p>
+                
+                
+                
+                <p>Yala gave breast cancer as an example of how many data points you need to understand to trace the likelihood of getting the disease. These include family history, density of breast tissue, results of mammograms, and flags on other types of imaging. To create patterns that indicate a higher risk of breast cancer, you need to incorporate hundreds of thousands of mammograms consisting of tens of millions of pixels, and high-risk MRI and CT scan indicators.</p>
+                
+                
+                
+                <p>Once a diagnostic team comes up with AI treatment structures, they face the same problems as with any new treatment, including drugs. They need clinical trials and FDA approval (which the number of approved algorithms we referenced above indicates is not an insurmountable challenge).&nbsp;&nbsp;</p>
+                
+                
+                
+                <p>“We’ve proven it works, but there is still a long time between research proof and clinical use,” said Yala. “We have to get insurers on board and hospitals signing off and more. Changing standard of care is a (challenging) task.”</p>
+                
+                
+                
+                <p>Yala shared a sentiment that was echoed by everyone we spoke with on this topic: AI, like everything else, is always and only a tool—a great tool but only a tool, not a replacement human brain. It must always be mediated by a clinical mind.&nbsp;</p>
+                
+                
+                
+                <p>“(Human minds) can catch finer-grained things,” said Yala. AI will give us more time to spend on care and reduce the time we waste putting the puzzle pieces together.&nbsp;</p>
+                
+                
+                
+                <h4 class="wp-block-heading"><strong>Current medical uses of AI</strong></h4>
+                
+                
+                
+                <p><em>Screening</em></p>
+                
+                
+                
+                <p>As Yala mentioned above, AI is being employed to design more exact screening tests for complex illnesses, including cancer.</p>
+                
+                
+                
+                <p><em>Intervention</em>&nbsp;</p>
+                
+                
+                
+                <p>“One of the approaches in current use is in monitoring patients for immediate decline,” said Saurabh Gombar, CEO of Atropos Health and resident physician at Stanford University Hospital. “We have criteria that physicians are trained on. If a patient is meeting those criteria, intervention may make sense. There’s a lot of difficulty in immediately monitoring patients if it’s done by a human, but a computer system can do it well.”</p>
+                
+                
+                
+                <p>So a number of institutions have an AI model for sepsis detection, which are active and in use in care in institutions across the United States. A study by <a href="https://hub.jhu.edu/magazine/2022/winter/ai-technology-to-detect-sepsis/#:~:text=A%20new%20artificial%20intelligence%20system,risk%20of%20life%2Dthreatening%20complications." target="_blank" rel="noreferrer noopener nofollow">Johns Hopkins University</a> of five such hospitals has found it to be effective.&nbsp;</p>
+                
+                
+                
+                <p><em>Early warning</em></p>
+                
+                
+                
+                <p>AI and embedded technologies are being used more and more to provide patient safety. “You’re starting to see more <a href="https://engineering.stanford.edu/magazine/article/ai-controlled-sensors-could-save-lives-smart-hospitals-and-homes" target="_blank" rel="noreferrer noopener nofollow">smart sensors</a> around the care space to make sure patients don’t fall, to detect things a little bit earlier, and get help to patients earlier,” said Gombar.&nbsp;&nbsp;</p>
+                
+                
+                
+                <p>The <a href="https://healthitanalytics.com/news/use-of-ai-enabled-screening-tool-led-to-more-diagnoses-of-heart-condition" target="_blank" rel="noreferrer noopener nofollow">Mayo Clinic</a> has found AI screening improved the ability to anticipate cardiac events. <a href="https://provectus.com/case-studies/ml-powered-disease-screening-platform/" target="_blank" rel="noreferrer noopener nofollow">Pr3vent</a> has identified childhood eye diseases early with the help of a machine learning solution. A study by the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7892287/" target="_blank" rel="noreferrer noopener nofollow">National Institutes of Health</a> has found AI-powered early warning systems enable quicker identification of health problems.&nbsp;</p>
+                
+                
+                
+                <p><em>Resource delivery</em></p>
+                
+                
+                
+                <p>AI is also used to <a href="https://www.nuance.com/healthcare.html" target="_blank" rel="noreferrer noopener nofollow">optimize resource delivery </a>to patients for drugs and equipment that are in short supply as well as to optimize hospital bed allocation.&nbsp;</p>
+                
+                
+                
+                <p>In addition, “AI is well suited to help with processes adjacent to care decisions,” said Gombar. “Clinicians do well making the correct decision for patients, but there are processes that make getting the care delivered difficult or costly, like making sure the chart has the adequate level of coding for billing.”</p>
+                
+                
+                
+                <h4 class="wp-block-heading"><strong>The future of AI in healthcare</strong></h4>
+                
+                
+                
+                <p><em>Medical assistants</em></p>
+                
+                
+                
+                <p>“These are going through trials at a number of medical facilities,” said <a href="https://www.cerebras.net/author/nataliacerebras-net/" target="_blank" rel="noreferrer noopener nofollow">Natalia Vassilieva</a>, Director of Product at the AI company <a href="https://www.cerebras.net/" target="_blank" rel="noreferrer noopener nofollow">Cerebras</a>. “These assistants will help produce the most effective doctors’ schedules and help [ensure] relevant patient information when they move from patient to patient.”</p>
+                
+                
+                
+                <p><em>Organization-wide workflows</em></p>
+                
+                
+                
+                <p><a href="https://www.healthcaredive.com/news/top-healthcare-trends-2023/642270/?utm_source=Sailthru&amp;utm_medium=email&amp;utm_campaign=Issue:%202023-02-09%20Healthcare%20Dive%20%5Bissue:47950%5D&amp;utm_term=Healthcare%20Dive" target="_blank" rel="noreferrer noopener nofollow">Healthcare Dive</a>’s assessment of this year’s top healthcare trends lays out a more integrated approach: “Providers will also start to weave artificial intelligence into their workflows, including in areas like clinical decision support, patient engagement, and revenue cycle management,” said journalist <a href="https://www.healthcaredive.com/editors/HMensik/" target="_blank" rel="noreferrer noopener nofollow">Hailey Mensik</a>, who specializes in interviewing healthcare leaders.&nbsp;</p>
+                
+                
+                
+                <p><em>Learning, training, and privacy</em></p>
+                
+                
+                
+                <p>There is always some worry, especially when it comes to healthcare, that AI will crash into our privacy and wind up sharing things we don’t want out in the open. Gombar does not believe this should inspire any panic, because data can be shared between healthcare AI models without exposing personally identifiable information (PII) data.&nbsp;</p>
+                
+                
+                
+                <p>“When you create an AI model, you take that model out and share it with the other hospitals to run that model on top of their data,” said Murali Gandhirajan, Snowflake’s Healthcare Field CTO. “The data is not getting shifted—the algorithm is getting shifted.”&nbsp;</p>
+                
+                
+                
+                <p>And, model sharing allows a radical communication of knowledge without risking a privacy breach. Hopefully, this process will gain more and more ground.&nbsp;</p>
+                
+                
+                
+                <p>There is a risk in using only public medical data; for example, data from the Centers of Disease Control and Prevention.&nbsp;</p>
+                
+                
+                
+                <p>“Projects that are trained on publicly available medical data, because there’s so few data sets available to them, tend to over-index on very few clinical scenarios,” said Gombar. “The result, for example, is that a disease could have too much prominence in a given analysis.”</p>
+                
+                
+                
+                <p>“AI learns from a data set that’s been provided to it,” Gombar said. “If there’s a demographic difference between where the training data set came from and the production data set, where it’s going to be utilized—then it’s going to localize that data. So even if a model has been developed somewhere else, actually calibrating it to your local environment is something that is important to do. Healthcare institutions that have pretty robust plans around the deployment of AI always have this local calibration step in place, but this is a new tool, so it’s not that every hospital in the country is equally aware of how to do this well.”</p>
+                
+                
+                
+                <h4 class="wp-block-heading"><strong>AI will always be a tool, not a replacement</strong></h4>
+                
+                
+                
+                <p>There will likely never be a wholly autonomous, AI-driven robot doctor. Short of the <a href="https://www.britannica.com/technology/singularity-technology" target="_blank" rel="noreferrer noopener nofollow">singularity</a>, AI is and will always be a tool.</p>
+                
+                
+                
+                <p>“But the sophistication of the tool will grow,” said Cerebras’ Vassilieva. “In some cases, where it’s trivial to recognize, the AI may be able to diagnose on its own. But when there are any doubts, when the picture is not crystal clear, it’ll highlight it to the doctor. I see it always used like that. I don’t think you’ll ever experience a completely automated loop of taking images, going into surgery, and a robotic doctor doing your procedure.”&nbsp;</p>
+                
+                
+                
+                <p>AI is a part of our medical experience and will likely become more so as it, and we, evolve together.<br>Join our <a href="https://www.snowflake.com/webinar/customer-webinars/accelerate-complex-workflows-with-snowpark-2023-07-27/" target="_blank" rel="noreferrer noopener">upcoming webinar on July 27</a> to learn how Sanofi, a multinational pharmaceutical and healthcare company, found success by leveraging Snowflake’s AI/ML capabilities with Snowpark.</p>
+                                  
+            
+        </div>
+        
+    </div>
+    <div class="container mt-4">
+        <h1>Recommend to you</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-5">
+            <div class="col">
+            <div class="card h-100 shadow-lg" onclick="window.location.href='blog4detail.html'">
+                <img src="assets/images/blog4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">AI in Education</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Jan 23,2024</small>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card h-100 shadow-lg" onclick="window.location.href='blog5detail.html'">
+                <img src="assets/images/blog5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">The Growth of Artificial Intelligence (AI) in Healthcare</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Jan 25,2024</small>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card h-100 shadow-lg" onclick="window.location.href='blog6detail.html'">
+                <img src="assets/images/blog6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">AI in engineering: Transforming the way software engineers work</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Jan 25,2024</small>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+	 
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="simplenav">
+								<a href="index.html">Home</a> | 
+								<a href="about.html">About</a> |
+								
+								
+								<a href="blogs.html">blog</a> |
+								<a href="gallery.html">Gallery</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="text-right">
+								AIMERS-MVSR &copy; Copyright 2024<br />
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<!-- /row of panels -->
+			</div>
+		</div>
+	</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- <script>
+      let comment = document.getElementById('comment');
+      let textArea = document.getElementById('textArea');
+      comment.onclick = function(){
+        textArea.classList.remove('d-none');
+        // comment.classList.add('d-none');
+      }
+    </script> -->
+</body>
+</html>

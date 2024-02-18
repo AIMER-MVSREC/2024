@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMERS-MVSR</title>
+    <link rel="favicon" href="assets/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen"> 
+	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel='stylesheet' id='camera-css'  href='assets/css/camera.css' type='text/css' media='all'> 
+</head>
+<style>
+   
+    .img {
+        height: 60vh;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container1 {
+        margin-top: 30px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .card-img-top {
+        height: 250px;
+        object-fit: cover;
+    }
+    .scrollspy-example-2 {
+    max-height: 300px; /* Set a maximum height for the comment section */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+    .container {
+      justify-content: center;
+    }
+    .comment-section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .comment-section .comments {
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .comment-section .input-group {
+        position: sticky;
+        bottom: 0;
+        background-color: #fff; /* Set a background color to ensure visibility */
+        z-index: 1000; /* Ensure the input group stays on top of other elements */
+    }
+    h1{
+        font-family: "Bree-Serif";
+    }
+    span {
+      font-size: 10px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #030e3c;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Bootstrap" width="30" height="24" class="logo"><span style="color: #fff;font-size: 30px;margin:15px;"> AIMER - MVSREC</span>
+            </a>
+            <button  style="background-color: #fff;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color: #fff;">Home</a>
+                    <a class="nav-link" href="about.html" style="color: #fff;">About</a>
+                    <a class="nav-link" href="blogs.html" style="color: #fff;">Blog</a>
+                    <a class="nav-link" href="gallery.html" style="color: #fff;">Gallery</a>
+                </div>
+            </div>
+        </div>
+      </nav>
+    <div class="container d-block d-lg-none">
+        <button class="btn m-2" style="background-color: #030e3c;color:#fff;">AI</button>
+        <button class="btn m-2" style="background-color: #030e3c;color:#fff;">EDUCATION</button>
+        <button class="btn m-2" style="background-color: #030e3c;color:#fff;">MACHINE LEARNING</button>
+        <button class="btn m-2" style="background-color: #030e3c;color:#fff;">Research</button>
+        <h1>Ensuring the Fairness of Algorithms that Predict Patient Disease Risk</h1>
+        <div>
+            <img src=""/>
+            <p>Admin</p>
+            
+        </div>
+        <hr>
+        <!--icons-->
+        <hr>
+        <div>
+            <img src="assets/images/blog3-img.jpg" class="img"/>
+            <p>To treat or not to treat?" is the question continually faced by clinicians. To help with their decision making, some turn to disease risk prediction models. These models forecast which patients are more or less likely to develop disease and thus could benefit from treatment, based on demographic factors and medical data.</p>
+            <br>
+           <p> With the growth of these tools across the medical field and especially in this area of clinical guidance, researchers at Stanford and elsewhere are grappling with how to ensure the fairness of the models' underlying algorithms. Bias has emerged as a significant problem when models are not developed using data reflecting diverse populations.</p>
+           <br>
+           <p>In a new study, Stanford researchers examined important clinical guidelines for cardiovascular health that advise the use of a risk calculator to guide prescription decisions for Black women, white women, Black men, and white men. The researchers looked at two ways that have been proposed for improving the fairness of the calculator’s algorithms. One approach, known as group recalibration, re-adjusts the risk model for each subgroup of patients to better match frequency of observed outcomes. The second approach, called equalized odds, seeks to ensure that error rates are similar for all groups. The researchers found that the recalibration approach overall produced the better match with the guidelines' recommendations.</p>
+           <br>
+           <p>The findings underscore the importance of building algorithms that take into account the full context relevant to the populations they serve.</p>
+           <br>
+           <p>"While machine learning has a lot of promise in medical settings and other social contexts, there is the potential for these technologies to worsen existing health inequities," says Agata Foryciarz, a Stanford PhD student in computer science and lead author of the study published in BMJ Health & Care Informatics. "Our results suggest that evaluating disease risk prediction models for fairness can make their use more responsible."</p>
+           <br>
+        <p>In addition to Foryciarz, the researchers include senior author Nigam Shah, Chief Data Scientist for Stanford Health Care and a Stanford HAI faculty member; Google Research Scientist Stephen Pfohl, and Google Health Clinical Specialist Birju Patel.</p>
+            
+        <h1>Refining Risk Assessment</h1>
+        <p>For their study, Foryciarz and colleagues used a cohort of more than 25,000 patients age 40-79 collected across several large datasets. The researchers compared the patients' actual incidence of atherosclerosis with the predictions made by risk models. As part of these experiments, the researchers built models using the two approaches of group recalibration and equalized odds and then compared the estimates the model's calculators generated with those generated by a simple model calculator with no fairness adjustment.</p>
+        <img src="assets/images/img8.jpg" class="img"/>
+        <p>Recalibrating separately for each of the four subgroups involved running the model for a subset of each subgroup and obtaining a risk score of the actual percentage of patients who developed disease, and then adjusting the underlying model for the broader subgroup. This approach did successfully boost the model’s desired compatibility with the guidelines for those patients at low levels of risk. On the other hand, differences in the error rates between the subgroups overall did emerge, especially at the high-risk end.</p>
+        <br>
+        
+        <p>The equalized odds approach, in contrast, required building a new predictive model that was constrained to yield equalized error rates across populations. In practice, this approach achieves similar false-positive and false-negative rates across populations. A false positive refers to a patient who was identified as high risk and would be started on a statin, but who did not develop atherosclerotic cardiovascular disease, while a false negative refers to a patient identified as low risk, but who did develop atherosclerotic cardiovascular disease and would likely have benefited from taking a statin.</p>
+        <br>
+        <p>Going with this equalized odds approach ultimately skewed the decision threshold levels for the various subgroups. Compared with the group recalibration approach, using the calculator built with equalized odds in mind would have led to more under- and over-prescribing of statins and would fail to potentially prevent some of the adverse outcomes.</p>
+<br>
+            <p>The gain in accuracy with group recalibration does require additional time and effort to adjust the original model versus leaving the model as-is, though this would be a small price to pay for improved clinical outcomes. An additional caveat is that dividing a population into subgroups does increase the chances of creating too small a sample size to as effectively assess risks within the subgroup, while also lessening the ability to extend the model's predictions to other subgroups.</p>
+            <br>   
+        <p> Overall, algorithm designers and clinicians alike should keep in mind which fairness metrics to use for evaluation and which, if any, to use for model adjustment. They should also understand how a model or calculator is going to be used in practice and how erroneous predictions could lead to clinical decisions that can generate adverse health outcomes down the line. Awareness of potential bias and further development of fairness approaches for algorithms can improve outcomes for all, Foryciarz notes. </p>
+        <br>  
+        <p> "While it’s not always easy to identify which of possibly many subgroups to focus on, considering some subgroups is better than not considering any," Foryciarz says. "Developing algorithms to serve a diverse population means that the algorithms themselves have to be developed with that diversity in mind."</p>
+        </div>
+        
+        
+    </div>
+    <div class="container1 d-none d-lg-block">
+        <div class="d-flex flex-row">
+            <button class="btn m-2" style="background-color: #030e3c;color:#fff;">AI</button>
+            <button class="btn m-2" style="background-color: #030e3c;color:#fff;">EDUCATION</button>
+            <button class="btn m-2" style="background-color: #030e3c;color:#fff;">MACHINE LEARNING</button>
+            <button class="btn m-2" style="background-color: #030e3c;color:#fff;">Research</button>
+            </div>
+        <h1>Ensuring the Fairness of Algorithms that Predict Patient Disease Risk</h1>
+        <div>
+            <img src=""/>
+            <p>Admin</p>
+            
+        </div>
+        <hr>
+        <!--icons-->
+        <hr>
+        <div>
+            <img src="assets/images/blog3-img.jpg" class="img"/>
+            <p>To treat or not to treat?" is the question continually faced by clinicians. To help with their decision making, some turn to disease risk prediction models. These models forecast which patients are more or less likely to develop disease and thus could benefit from treatment, based on demographic factors and medical data.</p>
+            <br>
+           <p> With the growth of these tools across the medical field and especially in this area of clinical guidance, researchers at Stanford and elsewhere are grappling with how to ensure the fairness of the models' underlying algorithms. Bias has emerged as a significant problem when models are not developed using data reflecting diverse populations.</p>
+           <br>
+           <p>In a new study, Stanford researchers examined important clinical guidelines for cardiovascular health that advise the use of a risk calculator to guide prescription decisions for Black women, white women, Black men, and white men. The researchers looked at two ways that have been proposed for improving the fairness of the calculator’s algorithms. One approach, known as group recalibration, re-adjusts the risk model for each subgroup of patients to better match frequency of observed outcomes. The second approach, called equalized odds, seeks to ensure that error rates are similar for all groups. The researchers found that the recalibration approach overall produced the better match with the guidelines' recommendations.</p>
+           <br>
+           <p>The findings underscore the importance of building algorithms that take into account the full context relevant to the populations they serve.</p>
+           <br>
+           <p>"While machine learning has a lot of promise in medical settings and other social contexts, there is the potential for these technologies to worsen existing health inequities," says Agata Foryciarz, a Stanford PhD student in computer science and lead author of the study published in BMJ Health & Care Informatics. "Our results suggest that evaluating disease risk prediction models for fairness can make their use more responsible."</p>
+           <br>
+        <p>In addition to Foryciarz, the researchers include senior author Nigam Shah, Chief Data Scientist for Stanford Health Care and a Stanford HAI faculty member; Google Research Scientist Stephen Pfohl, and Google Health Clinical Specialist Birju Patel.</p>
+            
+        <h1>Refining Risk Assessment</h1>
+        <p>For their study, Foryciarz and colleagues used a cohort of more than 25,000 patients age 40-79 collected across several large datasets. The researchers compared the patients' actual incidence of atherosclerosis with the predictions made by risk models. As part of these experiments, the researchers built models using the two approaches of group recalibration and equalized odds and then compared the estimates the model's calculators generated with those generated by a simple model calculator with no fairness adjustment.</p>
+        <img src="assets/images/img8.jpg" class="img"/>
+        <p>Recalibrating separately for each of the four subgroups involved running the model for a subset of each subgroup and obtaining a risk score of the actual percentage of patients who developed disease, and then adjusting the underlying model for the broader subgroup. This approach did successfully boost the model’s desired compatibility with the guidelines for those patients at low levels of risk. On the other hand, differences in the error rates between the subgroups overall did emerge, especially at the high-risk end.</p>
+        <br>
+        
+        <p>The equalized odds approach, in contrast, required building a new predictive model that was constrained to yield equalized error rates across populations. In practice, this approach achieves similar false-positive and false-negative rates across populations. A false positive refers to a patient who was identified as high risk and would be started on a statin, but who did not develop atherosclerotic cardiovascular disease, while a false negative refers to a patient identified as low risk, but who did develop atherosclerotic cardiovascular disease and would likely have benefited from taking a statin.</p>
+        <br>
+        <p>Going with this equalized odds approach ultimately skewed the decision threshold levels for the various subgroups. Compared with the group recalibration approach, using the calculator built with equalized odds in mind would have led to more under- and over-prescribing of statins and would fail to potentially prevent some of the adverse outcomes.</p>
+<br>
+            <p>The gain in accuracy with group recalibration does require additional time and effort to adjust the original model versus leaving the model as-is, though this would be a small price to pay for improved clinical outcomes. An additional caveat is that dividing a population into subgroups does increase the chances of creating too small a sample size to as effectively assess risks within the subgroup, while also lessening the ability to extend the model's predictions to other subgroups.</p>
+            <br>   
+        <p> Overall, algorithm designers and clinicians alike should keep in mind which fairness metrics to use for evaluation and which, if any, to use for model adjustment. They should also understand how a model or calculator is going to be used in practice and how erroneous predictions could lead to clinical decisions that can generate adverse health outcomes down the line. Awareness of potential bias and further development of fairness approaches for algorithms can improve outcomes for all, Foryciarz notes. </p>
+        <br>  
+        <p> "While it’s not always easy to identify which of possibly many subgroups to focus on, considering some subgroups is better than not considering any," Foryciarz says. "Developing algorithms to serve a diverse population means that the algorithms themselves have to be developed with that diversity in mind."</p>
+        </div>
+        
+    </div>
+    <div class="container mt-4">
+        <h1>Recommend to you</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-5">
+            <div class="col">
+            <div class="card h-100 shadow-lg" onclick="window.location.href='blog4detail.html'">
+                <img src="assets/images/blog4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">AI in Education</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Jan 23,2024</small>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card h-100 shadow-lg" onclick="window.location.href='blog5detail.html'">
+                <img src="assets/images/blog5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">The Growth of Artificial Intelligence (AI) in Healthcare</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Jan 25,2024</small>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card h-100 shadow-lg" onclick="window.location.href='blog6detail.html'">
+                <img src="assets/images/blog6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">AI in engineering: Transforming the way software engineers work</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Jan 25,2024</small>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+	 
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="simplenav">
+								<a href="index.html">Home</a> | 
+								<a href="about.html">About</a> |
+								
+								
+								<a href="blogs.html">blog</a> |
+								<a href="gallery.html">Gallery</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="text-right">
+								AIMERS-MVSR &copy; Copyright 2024<br />
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<!-- /row of panels -->
+			</div>
+		</div>
+	</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- <script>
+      let comment = document.getElementById('comment');
+      let textArea = document.getElementById('textArea');
+      comment.onclick = function(){
+        textArea.classList.remove('d-none');
+        // comment.classList.add('d-none');
+      }
+    </script> -->
+</body>
+</html>
